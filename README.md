@@ -90,7 +90,7 @@ Usage (CLIs)
   - Auto N per example: python Hybrid-Dyn-Attack/cli.py --Just_Hybrid --datasets imdb --models jialicheng/deberta-base-imdb --n_mode auto --ks -1 --classifier_name deberta
   - Manual N values:   python Hybrid-Dyn-Attack/cli.py --Just_Hybrid --datasets imdb --models jialicheng/deberta-base-imdb --n_mode manual --ns 2 3 6 --ks -1 --classifier_name deberta
 
-- Hybrid_Sentence_Attack_LLM (sentence-level Hybrid):
+- Hybrid-Sentence-Attack-LLM (sentence-level Hybrid):
   - python Hybrid_Sentence_Attack_LLM/cli.py --HybridSent --datasets imdb --models jialicheng/deberta-base-imdb --ns 2 3 6 --ks -1 --classifier_name deberta
 
 Raw-Scripts
