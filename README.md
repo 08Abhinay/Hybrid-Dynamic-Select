@@ -10,30 +10,75 @@ Project Structure
 - Hybrid_Sentence_Attack_LLM: Hybrid sentence-level attack (modularized)
 - Raw-Scripts: Formerly scripts; de‑modularized single‑file versions for quick, ad‑hoc experiments
 
-Folder Tree (top-level)
-- DynNnary/
-  - attack/ (ns_node, n_ary, nnary, greedy)
-  - replace/ (wordnet_replace, bert_replace)
-  - metrics/ (perturbation, similarity)
-  - utils/ (prediction, n_selector)
-  - experiments/ (runner)
-  - cli.py
-- Hybrid-Dyn-Attack/
-  - attack/ (ns_node, n_ary, hybrid, greedy)
-  - replace/ (wordnet_replace)
-  - metrics/ (perturbation, similarity)
-  - utils/ (prediction, n_selector)
-  - experiments/ (runner)
-  - cli.py
-- Hybrid_Sentence_Attack_LLM/
-  - attack/ (ns_node, n_ary, hybrid)
-  - replace/ (wordnet_replace)
-  - metrics/ (perturbation, similarity)
-  - utils/ (prediction, text)
-  - experiments/ (runner)
-  - models/ (classifier wrapper)
-  - cli.py
-- Raw-Scripts/ (de‑modularized originals for ad‑hoc use)
+Project Trees
+
+DynNnary
+```text
+DynNnary/
+├── __init__.py
+├── cli.py
+├── attack/
+│   ├── greedy.py
+│   ├── n_ary.py
+│   ├── nnary.py
+│   └── ns_node.py
+├── experiments/
+│   └── runner.py
+├── metrics/
+│   ├── perturbation.py
+│   └── similarity.py
+├── replace/
+│   ├── bert_replace.py
+│   └── wordnet_replace.py
+└── utils/
+    ├── n_selector.py
+    └── prediction.py
+```
+
+Hybrid-Dyn-Attack
+```text
+Hybrid-Dyn-Attack/
+├── cli.py
+├── attack/
+│   ├── greedy.py
+│   ├── hybrid.py
+│   ├── n_ary.py
+│   └── ns_node.py
+├── experiments/
+│   └── runner.py
+├── metrics/
+│   ├── perturbation.py
+│   └── similarity.py
+├── replace/
+│   └── wordnet_replace.py
+└── utils/
+    ├── n_selector.py
+    └── prediction.py
+```
+
+Hybrid_Sentence_Attack_LLM
+```text
+Hybrid_Sentence_Attack_LLM/
+├── __init__.py
+├── cli.py
+├── attack/
+│   ├── greedy.py
+│   ├── hybrid.py
+│   ├── n_ary.py
+│   └── ns_node.py
+├── experiments/
+│   └── runner.py
+├── metrics/
+│   ├── perturbation.py
+│   └── similarity.py
+├── models/
+│   └── classifier.py
+├── replace/
+│   └── wordnet_replace.py
+└── utils/
+    ├── prediction.py
+    └── text.py
+```
 
 Usage (CLIs)
 - DynNnary (N-ary / Greedy WNR):
