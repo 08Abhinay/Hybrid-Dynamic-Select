@@ -1,6 +1,6 @@
 # Hybrid-Dynamic-Select
 
-Modular implementations of score-based adversarial NLP attacks and a Raw-Scripts area for single-file, ad‑hoc experimentation.
+Implementations of score-based adversarial NLP attacks and a Raw-Scripts area for single-file, ad‑hoc experimentation.
 
 This repo now provides clean, reusable packages for different attack variants, while keeping the original one-file scripts (moved under Raw-Scripts) for convenience.
 
